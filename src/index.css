@@ -1,6 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: Fira Code, monospace;
+  line-height: 1.2;
   font-weight: 400;
 
   color: white;
@@ -57,11 +57,19 @@ footer div {
 
 footer h2 {
   font-size: 1.4rem;
+  color: rgb(255, 192, 18);
+  -webkit-text-stroke: 0.45px black;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 footer h1 {
-  font-size: 0.9rem;
-  font-weight: 200;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  -webkit-text-stroke: 0.25px black;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 footer button {
@@ -75,11 +83,14 @@ footer button {
 }
 
 footer button i {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 footer button:hover {
   opacity: 0.7;
+  font-size: 1rem;
+  transform: scale(1.2);
+  color: rgb(255, 192, 18);
 }
 
 .bgGradient {
@@ -114,19 +125,21 @@ footer button:hover {
   overflow-y: scroll;
   height: 100%;
   width: 80%;
-  max-width: 800px;
+  max-width: 650px;
   margin-left: auto;
   background: #030615;
 }
 
 .sidebarContents h2 {
   font-weight: 200;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  color: rgb(255, 192, 18);
 }
 
 .sidebarContents div {
   flex: 1;
 }
+
 
 .sidebarContents button {
   background: transparent;
@@ -136,22 +149,27 @@ footer button:hover {
   margin-right: auto;
   cursor: pointer;
   transition-duration: 200ms;
-  padding: 1rem 0;
+  padding: 1rem 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 .sidebarContents button:hover {
   opacity: 0.7;
+  transform: scale(1.2);
+  color: rgb(255, 192, 18);
 }
 
 .descriptionContainer {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .descriptionTitle {
   font-size: 1.1rem;
   font-weight: 200;
+  color: gray;
 }
 
 .loadingState {
@@ -167,6 +185,19 @@ footer button:hover {
   animation: spin 1s linear infinite;
 }
 
+.sidebarContents::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebarContents::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebarContents::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 213, 0.2);
+  border-radius: 4px;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -176,7 +207,6 @@ footer button:hover {
     transform: rotate(360deg);
   }
 }
-
 
 @media (min-width: 640px) {
   .sidebar {
