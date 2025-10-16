@@ -1,16 +1,34 @@
-# React + Vite
+# 🌌 GalaxyGrid
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> React site that displays NASA’s Astronomy Picture of the Day with info about each image.
 
-Currently, two official plugins are available:
+<img width="1270" height="760" alt="Nasa Galaxy" src="assets/icon/ProjectLogo.jpg" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- 🌠 Fetches daily astronomy images from NASA API  
+- 📖 Displays title, description, and copyright (if available)  
+- 📅 Optionally view previous images (if implemented)  
+- 💻 Responsive design for desktop, tablet, and mobile  
+- ⚡ Simple and clean UI for easy exploration of space  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Quick Start
 
-## Expanding the ESLint configuration
+1. **Clone and install**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/GalaxyGrid.git
+   cd GalaxyGrid
+   npm install
+   ```
+   
+2. **Setup Firebase**
+   - get a free NASA API key from [NASA API KEY](https://api.nasa.gov/)
+   - Create a .env file in the project root
+   ```bash
+   VITE-NASA-API-KEY = YOUR_API_KEY_HERE
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Run**
+   ```bash
+   npm start
+   ```
