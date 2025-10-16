@@ -2,8 +2,6 @@
 
 > React site that displays NASA’s Astronomy Picture of the Day with info about each image.
 
-<img width="1270" height="760" alt="Nasa Galaxy" src="assets/icon/ProjectLogo.jpg" />
-
 ## Features
 
 - 🌠 Fetches daily astronomy images from NASA API  
@@ -16,16 +14,16 @@
 
 1. **Clone and install**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/GalaxyGrid.git
+   git clone https://github.com/ShozabSHK10/GalaxyGrid.git
    cd GalaxyGrid
    npm install
    ```
    
-2. **Setup Firebase**
+2. **Setup the API key**
    - get a free NASA API key from [NASA API KEY](https://api.nasa.gov/)
    - Create a .env file in the project root
    ```bash
-   VITE-NASA-API-KEY = YOUR_API_KEY_HERE
+   VITE_NASA_API_KEY = YOUR_API_KEY_HERE
    ```
 
 3. **Run**
