@@ -10,8 +10,8 @@ export default function SideBar(props) {
             {data?.date
               ? (() => {
                   const d = new Date(data.date);
-                  const day = d.getDate(); // 1-31, no leading zero
-                  const month = d.toLocaleString("en-GB", { month: "short" }); // 'Oct'
+                  const day = d.getDate(); 
+                  const month = d.toLocaleString("en-GB", { month: "short" });
                   const year = d.getFullYear();
                   return `${day}-${month}-${year}`;
                 })()
